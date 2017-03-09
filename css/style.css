@@ -1,3 +1,4 @@
+@import url(normalize.css);
 *,
 *:after,
 *:before {
@@ -12,11 +13,11 @@ html {
 body, html {
   min-height: 100%; }
 
-.ba-container, .ba-header .ba-container, .ba-about .ba-container, .ba-services .ba-container, .ba-doing .ba-container, .ba-contact .ba-container, .ba-footer .ba-container {
+.ba-container, .ba-header .ba-container, .ba-about .ba-container, .ba-services .ba-container, .ba-doing .ba-container, .ba-flex-container .ba-container, .ba-contact .ba-container, .ba-footer .ba-container {
   max-width: 910px;
   margin: 0 auto; }
 
-.ba-font, .ba-container--hero .ba-header__title, .ba-container--hero .ba-header__text, .ba-box__title__text, .ba-doing .ba-box__title-item, .ba-doing .ba-box__text, .ba-contact .ba-box__text {
+.ba-font, .ba-container--hero .ba-header__title, .ba-container--hero .ba-header__text, .ba-box__title__text, .ba-doing .ba-box__title-item, .ba-doing .ba-box__text, .ba-flex-container .ba-flex-item__content, .ba-contact .ba-box__text {
   color: #3c3c3c;
   font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
@@ -134,6 +135,49 @@ body, html {
     max-width: 545px;
     font-weight: 300;
     line-height: 26px; }
+
+/*Works section*/
+.ba-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -10px; }
+  .ba-flex-container .ba-flex-item {
+    width: 15%;
+    min-width: 350px;
+    height: 237px;
+    margin: 0 0 10px 10px;
+    flex-grow: 1;
+    position: relative;
+    padding: 170px 30px 0; }
+    .ba-flex-container .ba-flex-item:first-child {
+      background: #6f90b8 url("../assets/topworkz.jpg") 50% no-repeat;
+      background-size: cover; }
+    .ba-flex-container .ba-flex-item:nth-child(2) {
+      background: #99a5b4 url("../assets/join.jpg") 50% no-repeat;
+      background-size: cover;
+      width: 600px; }
+    .ba-flex-container .ba-flex-item:nth-child(3) {
+      background: #7d8698 url("../assets/market.jpg") 50% no-repeat;
+      background-size: cover; }
+    .ba-flex-container .ba-flex-item:nth-child(4) {
+      background: #6f90b8 url("../assets/worktop.png") 50% no-repeat;
+      background-size: cover; }
+    .ba-flex-container .ba-flex-item:nth-child(5) {
+      background: #99a5b4 url("../assets/label.jpg") 50% no-repeat;
+      background-size: cover;
+      width: 600px; }
+    .ba-flex-container .ba-flex-item:last-child {
+      background: #99a4b4 url("../assets/kyiv.jpg") 50% no-repeat;
+      background-size: cover; }
+    .ba-flex-container .ba-flex-item:hover {
+      background-color: #aeb8ce;
+      background-blend-mode: multiply; }
+    .ba-flex-container .ba-flex-item__content {
+      color: #ffffff;
+      font-size: 26px;
+      text-transform: uppercase; }
 
 /*Contact Section*/
 .ba-contact {

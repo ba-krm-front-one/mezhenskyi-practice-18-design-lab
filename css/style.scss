@@ -1,3 +1,4 @@
+@import "normalize.css";
 @import 'start_work';
 $margin-center: 0 auto;
 $font-family:'Lato', Arial, sans-serif;
@@ -5,6 +6,7 @@ $font-size: 14px;
 $font-weight: 700;
 $color-white: #ffffff;
 $color-black: #3c3c3c;
+
 
 .ba-container {
   max-width: 910px;
@@ -159,6 +161,62 @@ $color-black: #3c3c3c;
     }
   }
 }
+/*Works section*/
+.ba-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -10px;
+  .ba-container {
+    @extend .ba-container;
+  }
+  .ba-flex-item{
+    width: 15%;
+    min-width: 350px;
+    height: 237px;
+    margin: 0 0 10px 10px;
+    flex-grow: 1;
+    position: relative;
+    padding: 170px 30px 0;
+      &:first-child {
+      background: #6f90b8 url("../assets/topworkz.jpg") 50% no-repeat;
+      background-size: cover;
+      }
+      &:nth-child(2){
+        background: #99a5b4 url("../assets/join.jpg") 50% no-repeat;
+        background-size: cover;
+        width: 600px;
+      }
+      &:nth-child(3) {
+      background: #7d8698 url("../assets/market.jpg") 50% no-repeat;
+      background-size: cover;
+     }
+      &:nth-child(4) {
+      background: #6f90b8 url("../assets/worktop.png") 50% no-repeat;
+      background-size: cover;
+      }
+      &:nth-child(5) {
+      background: #99a5b4 url("../assets/label.jpg") 50% no-repeat;
+      background-size: cover;
+      width: 600px;
+      }
+      &:last-child {
+      background: #99a4b4 url("../assets/kyiv.jpg") 50% no-repeat;
+      background-size: cover;
+      }
+       &:hover {
+         background-color: #aeb8ce;
+         background-blend-mode: multiply;
+       }
+       &__content {
+         @extend .ba-font;
+         color: $color-white;
+         font-size: 26px;
+         text-transform: uppercase;
+       }
+    }
+  }
 /*Contact Section*/
 .ba-contact {
   padding: 138px 0 15px 0;
