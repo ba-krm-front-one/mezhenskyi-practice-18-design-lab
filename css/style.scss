@@ -135,6 +135,30 @@ $color-black: #3c3c3c;
       background: $color-white;
     }
 }
+/*Doing section*/
+.ba-doing {
+  padding: 120px 0;
+  .ba-container {
+    @extend .ba-container;
+  }
+  .ba-box {
+    &__img {
+      margin: 110px 0 40px 0;
+    }
+    &__title-item {
+      @extend .ba-font;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    &__text {
+      max-width: 545px;
+      @extend .ba-font;
+      font-weight: 300;
+      line-height: 26px;
+    }
+  }
+}
 /*Contact Section*/
 .ba-contact {
   padding: 138px 0 15px 0;

@@ -12,11 +12,11 @@ html {
 body, html {
   min-height: 100%; }
 
-.ba-container, .ba-header .ba-container, .ba-about .ba-container, .ba-services .ba-container, .ba-contact .ba-container, .ba-footer .ba-container {
+.ba-container, .ba-header .ba-container, .ba-about .ba-container, .ba-services .ba-container, .ba-doing .ba-container, .ba-contact .ba-container, .ba-footer .ba-container {
   max-width: 910px;
   margin: 0 auto; }
 
-.ba-font, .ba-container--hero .ba-header__title, .ba-container--hero .ba-header__text, .ba-box__title__text, .ba-contact .ba-box__text {
+.ba-font, .ba-container--hero .ba-header__title, .ba-container--hero .ba-header__text, .ba-box__title__text, .ba-doing .ba-box__title-item, .ba-doing .ba-box__text, .ba-contact .ba-box__text {
   color: #3c3c3c;
   font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
@@ -120,6 +120,20 @@ body, html {
   .ba-services .ba-box:before,
   .ba-services .ba-box:after {
     background: #ffffff; }
+
+/*Doing section*/
+.ba-doing {
+  padding: 120px 0; }
+  .ba-doing .ba-box__img {
+    margin: 110px 0 40px 0; }
+  .ba-doing .ba-box__title-item {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .ba-doing .ba-box__text {
+    max-width: 545px;
+    font-weight: 300;
+    line-height: 26px; }
 
 /*Contact Section*/
 .ba-contact {
